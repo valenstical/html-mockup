@@ -1,0 +1,80 @@
+.author {
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom: 30px;
+    text-align: center;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.05);
+}
+
+.author img {
+    width: 85px;
+    height: 85px;
+    border-top-left-radius: 100%;
+    border-radius: 100%;
+    margin-bottom: 25px;
+}
+
+.author h4 {
+    font-weight: bold;
+    color: #464444;
+    font-size: 17px;
+    margin-bottom: 6px;
+}
+
+.author p {
+    color: #999595;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.author button,
+.author button:focus {
+    font-size: 13px;
+    color: #66008C;
+    display: inline-block;
+    padding: 7px 50px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.09);
+    font-weight: 400;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.author button:hover {
+    -webkit-transform: translateY(-2px);
+    -moz-transform: translateY(-2px);
+    transform: translateY(-2px);
+    color: #66008C;
+    text-decoration: none;
+    box-shadow: 0px 0px 12px rgba(102, 0, 140, 0.2) ;
+}
+
+.author.following button,
+.author button.following {
+    background-color: #66008C;
+    color: white;
+}
+
+.list-view .author {
+    border-radius: 5px;
+}
+
+.list-view .author img {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+
+.list-view .author-details {
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 3px;
+}
+
+.list-view .author button {
+    margin-top: 5px;
+    margin-bottom: 0px;
+}

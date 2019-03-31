@@ -1,0 +1,44 @@
+
+.form .form-control {
+    background-color: #F4F3F3;
+    border: none;
+}
+
+.form textarea.form-control {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 120px;
+}
+
+.form .form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(102, 0, 140, 0.25);
+}
+
+.custom-control-label {
+    padding-left: 10px;
+    padding-top: 2px;
+}
+
+.custom-control-label::before {
+    border: 2px solid #66008c;
+    height: 20px;
+    width: 20px;
+}
+
+.custom-control-label::after {
+    background-size: 12px;
+    top: 6px;
+    left: -22px;
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    border-color: #66008c;
+    background-color: #66008c;
+    outline: none;
+}
+
+.custom-control-input:focus~.custom-control-label::before,
+.custom-control-input:focus:not(:checked)~.custom-control-label::before {
+    box-shadow: 0 0 0 0.2rem rgba(102, 0, 140, 0.25);
+    border-color: #66008c;
+}

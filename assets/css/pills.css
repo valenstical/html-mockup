@@ -1,0 +1,18 @@
+.pill-group {
+    border-radius: 46px;
+    border: 1px solid #c4c4c4;
+    overflow: hidden;
+}
+
+#pill-group a {
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 46px;
+}
+
+.pill-group .btn.active {
+    background-color: #66008C;
+    color: white;
+    box-shadow: 2px 3px 7px rgba(0,0,0,0.25);
+}

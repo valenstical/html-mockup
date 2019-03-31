@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Authors Haven is a platform for creative writers to share their ideas with the world.">
+        <meta name="author" content="Apollo">
+        <meta name="theme-color" content="#530470">
+        <title>Authors Haven | Inspire the world with your ideas</title>
+        <link rel="icon" href="assets/images/icons/logo.png" type="image/png">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" type="text/css">
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/shared.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/profile-box.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/form.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="modal fade" id="modalDeleteArticles" tabindex="-1" role="dialog" aria-hidden="true" data-pg-collapsed> 
+            <div class="modal-dialog"> 
+                <div class="modal-content"> 
+                    <div class="modal-header">                          
+
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>                         
+                    </div>                     
+
+                    <div class="modal-body text-center"> 
+                        <h5 class="modal-title font-weight-bold d-block ml-auto mr-auto mb-3 text-danger">Are you absolutely sure?</h5>
+                        <p>This will permanently delete ALL your articles from Authors Haven. This action <strong>cannot</strong> be undone.</p>
+                        <form role="form" class="form"> 
+                            <div class="form-group mb-4"> 
+                                <label for="password">Please type in your password to confirm.</label>                                 
+                                <input type="password" class="form-control text-capitalize" id="password" name="password" required> 
+                            </div>                             
+                            <button type="submit" class="btn btn-outline-danger">I understand the risk, delete my articles</button>                             
+                        </form>                         
+                    </div>                                          
+                </div>                 
+            </div>             
+        </div>
+        <div class="modal fade" id="modalDeleteAccount" tabindex="-1" role="dialog" aria-hidden="true" data-pg-collapsed> 
+            <div class="modal-dialog"> 
+                <div class="modal-content"> 
+                    <div class="modal-header">                          
+
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>                         
+                    </div>                     
+
+                    <div class="modal-body text-center"> 
+                        <h5 class="modal-title font-weight-bold d-block ml-auto mr-auto mb-3 text-danger">Are you absolutely sure?</h5>
+                        <p>This will remove your account from Authors Haven. If you have any articles it will NOT be deleted, Your articles will be archived and will remain accessable to the public.</p>
+                        <form role="form" class="form"> 
+                            <div class="form-group mb-4"> 
+                                <label for="password">Please type in your password to confirm.</label>                                 
+                                <input type="password" class="form-control text-capitalize" id="password" name="password" required> 
+                            </div>                             
+                            <button type="submit" class="btn btn-outline-danger">Delete my account</button>                             
+                        </form>                         
+                    </div>                                          
+                </div>                 
+            </div>             
+        </div>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light navbar-logged" id="navbar" data-pg-collapsed> 
+            <div class="container">
+                <a class="navbar-brand" href="index.html">Authors Haven</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler17" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"> 
+                    <span class="navbar-toggler-icon"></span> 
+                </button>
+                <div class="collapse navbar-collapse" id="navbarToggler17"> 
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0"> 
+                        <li class="nav-item dropdown"> 
+                            <a class="nav-link dropdown-toggle" href="categories.html" id="navbarDropdownMenuLink18" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                                    Categories                               </a> 
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink18"> 
+                                <a class="dropdown-item" href="#">Business</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Entertainment</a>
+                                <div class="dropdown-divider"></div>                                 
+                                <a class="dropdown-item" href="#">Fashion</a>
+                                <div class="dropdown-divider"></div>                                 
+                                <a class="dropdown-item" href="#">Food</a>
+                                <div class="dropdown-divider"></div>                                 
+                                <a class="dropdown-item" href="#">Health</a>
+                                <div class="dropdown-divider"></div>                                 
+                                <a class="dropdown-item" href="#">History</a>
+                                <div class="dropdown-divider"></div>                                 
+                                <a class="dropdown-item" href="#">Technology</a>
+                                <div class="dropdown-divider"></div>                                 
+                                <a class="dropdown-item" href="#">Sports</a>
+                                <div class="dropdown-divider"></div>                                 
+                                <a class="dropdown-item" href="#">Others</a> 
+                            </div>
+                        </li>
+                        <li class="nav-item"> 
+                            <a class="nav-link" href="authors.html">Authors <span class="sr-only">(current)</span></a> 
+                        </li>                         
+                        <li class="nav-item"> 
+                            <a class="nav-link" href="bookmarks.html">Bookmarks</a> 
+                        </li>
+                        <li class="nav-item"> 
+                            <a class="nav-link" href="search.html"><i class="fas fa-search"></i> Search</a> 
+                        </li>                         
+                    </ul>
+                    <ul class="navbar-nav mt-lg-0"> 
+                        <li class="nav-item"> 
+                            <a class="nav-link btn-cta transition btn-brand" href="signup.html"><i class="fas fa-pen transition"></i>Write an article</a> 
+                        </li>                         
+                    </ul>                     
+                </div>
+                <div class="dropdown nav-profile"> 
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img class="nav-profile" src="assets/images/authors/photo-1522720962427-d53e89da4071.jpg"/> 
+                    </button>                     
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton"> 
+                        <a class="dropdown-item" href="create-article.html">Write an article</a> 
+                        <div class="dropdown-divider"></div>                         
+                        <a class="dropdown-item" href="search.html">Search articles</a> 
+                        <div class="dropdown-divider"></div>                         
+                        <a class="dropdown-item" href="dashboard.html">My Dashboard</a> 
+                        <a class="dropdown-item" href="profile.html">My Profile</a> 
+                        <a class="dropdown-item" href="bookmarks.html">My Bookmarks</a>
+                        <div class="dropdown-divider"></div>                         
+                        <a class="dropdown-item" href="following.html">Following</a> 
+                        <a class="dropdown-item" href="followers.html">Followers</a> 
+                        <div class="dropdown-divider"></div>                         
+                        <a class="dropdown-item" href="settings.html">Settings</a>
+                        <a class="dropdown-item" href="login.html">Logout</a> 
+                    </div>
+                </div>
+            </div>             
+        </nav>
+        <main class="main-body" data-pg-collapsed>
+            <section class="wrapper min-vh-100">
+                <div class="container">
+                    <header class="page-header" data-pg-collapsed>
+                        <h1>
+    My Profile </h1>
+                    </header>
+                    <div class="profile-box mt-n4 mb-5" data-pg-collapsed>
+                        <div class="d-inline-block relative profile-img-cover">
+                            <img src="assets/images/authors/photo-1522720962427-d53e89da4071.jpg" class="img-thumbnail"/>
+                        </div>
+                        <div class="profile-wrapper">
+                            <h4 class="profile-name">Alexandria de Stubborn</h4>
+                            <p class="profile-username">@alexis</p>
+                            <small class="profile-followers"><span>22k</span>Followers</small>
+                            <small class="profile-followers"><span>100</span>Following</small>
+                        </div>
+                        <div class="profile-footer">
+                            <a href="dashboard.html" class="btn"><span class="relative">Dashboard</span></a>
+                            <a href="profile.html" class="btn"><span class="relative">Edit profile</span></a>
+                            <a href="settings.html" class="btn active"><span class="relative">Settings</span></a>
+                        </div>
+                    </div>
+                    <h5 class="font-weight-bold">Notification Preferences</h5>
+                    <div class="card mb-5" data-pg-collapsed>
+                        <div class="form p-sm-4 p-3"> 
+                            <div class="custom-control custom-checkbox mb-2"> 
+                                <input type="checkbox" class="custom-control-input" id="canEmail" name="canEmail" checked="checked"> 
+                                <label class="custom-control-label" for="canEmail">Enable email notifications</label>                                 
+                            </div>
+                            <div class="custom-control custom-checkbox"> 
+                                <input type="checkbox" class="custom-control-input" id="canNotify" name="canNotify"> 
+                                <label class="custom-control-label" for="canNotify">Enable browser notifications</label>                                 
+                            </div>                             
+                        </div>
+                    </div>
+                    <h5 class="font-weight-bold">Danger Zone</h5>
+                    <div class="card mb-5">
+                        <div class="form p-sm-4 p-3"> 
+                            <div class="" data-pg-collapsed>
+                                <h6 class="font-weight-bold mb-0">Delete all my articles</h6>
+                                <p>This will permanently delete all your articles</p>
+                                <button type="submit" class="btn btn-brand btn-plain btn-secondary btn-condensed font-weight-bold" data-toggle="modal" data-target="#modalDeleteArticles">Delete my articles</button>
+                            </div>
+                            <hr class="mt-4 mb-4"/>
+                            <div data-pg-collapsed>
+                                <h6 class="font-weight-bold mb-0">Delete my account</h6>
+                                <p>This will remove your account from Authors Haven and archive your articles (if any).</p>
+                                <button type="submit" class="btn btn-brand btn-plain btn-secondary btn-condensed font-weight-bold" data-target="#modalDeleteAccount" data-toggle="modal">Delete my account</button>
+                            </div>                             
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer" data-pg-collapsed>
+                <div class="container">
+                    <div>
+                        <a href="index.html" class="logo">Authors Haven</a>
+                        <a href="authors.html">Authors</a>
+                        <a href="categories.html">Categories</a>
+                        <a href="search.html"><i class="fas fa-search"></i> Search</a>
+                        <a href="login.html">Login</a>
+                        <a href="terms.html" class="pull-right terms">Terms &amp; Conditions</a>
+                    </div>
+                </div>
+            </footer>
+        </main>
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/popper.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/delete-this.js"></script>
+    </body>
+</html>
