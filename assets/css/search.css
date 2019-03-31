@@ -58,3 +58,7 @@
     border: none;
     outline: none;
 }
+
+.wrapper .page-header-sm h1 {
+    font-size: 18px;
+}
