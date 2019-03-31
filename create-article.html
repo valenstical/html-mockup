@@ -14,9 +14,10 @@
         <link href="assets/css/shared.css" rel="stylesheet" type="text/css">
         <link href="assets/css/profile-box.css" rel="stylesheet" type="text/css">
         <link href="assets/css/form.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/tagsinput.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg fixed-top navbar-light navbar-logged" id="navbar" data-pg-collapsed> 
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light navbar-logged" id="navbar"> 
             <div class="container">
                 <a class="navbar-brand" href="index.html">Authors Haven</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler17" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"> 
@@ -92,22 +93,22 @@
     New Article</h1>
                     </header>
                     <div class="card mb-5 mt-n5">
-                        <form role="form" class="form p-sm-4 p-3"> 
-                            <div class="form-group mb-4" data-pg-collapsed> 
+                        <form role="form" class="form p-sm-4 p-3 form-borderless"> 
+                            <div class="form-group mb-4"> 
                                 <label for="title" class="font-weight-bold">Title</label>                                 
                                 <input type="text" class="form-control text-capitalize" id="title" name="title" required> 
                             </div>
-                            <div class="form-group mb-4" data-pg-collapsed> 
+                            <div class="form-group mb-4"> 
                                 <label for="description" class="font-weight-bold">Short Description</label>                                 
                                 <textarea class="form-control textarea-sm" id="description" name="description"></textarea>                                 
                             </div>
-                            <div class="form-group mb-4" data-pg-collapsed> 
+                            <div class="form-group mb-4"> 
                                 <label for="description" class="font-weight-bold">Details</label>                                 
                                 <textarea class="form-control" id="body" name="body"></textarea>                                 
                             </div>
                             <div class="form-group mb-4"> 
-                                <label class="font-weight-bold">Category</label>
-                                <select class="custom-select" name="category"> 
+                                <label class="font-weight-bold" for="category">Category</label>
+                                <select class="custom-select" name="category" id="category"> 
                                     <option selected value="-1">-- Choose one --</option>                                     
                                     <option value="3">Business</option>                                     
                                     <option value="7">Entertainment</option>                                     
@@ -118,14 +119,18 @@
                                     <option value="1">Technology</option>
                                     <option value="2">Sports</option>                                     
                                     <option value="9">Others</option>                                     
-                                </select>                                                                  
+                                </select>                                 
+                            </div>
+                            <div class="form-group mb-4"> 
+                                <label class="font-weight-bold" for="tags">Tags (optional)</label>
+                                <input type="text" class="form-control" id="tags" name="tags" data-role="tagsinput"> 
                             </div>                             
-                            <button type="submit" class="btn btn-brand btn-plain">Publish article</button>                             
+                            <button type="submit" class="btn btn-brand btn-plain mt-3">Publish article</button>                             
                         </form>
                     </div>
                 </div>
             </section>
-            <footer class="footer" data-pg-collapsed>
+            <footer class="footer">
                 <div class="container">
                     <div>
                         <a href="index.html" class="logo">Authors Haven</a>
@@ -142,6 +147,7 @@
         <script src="assets/js/popper.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="https://cdn.ckeditor.com/ckeditor5/12.0.0/classic/ckeditor.js"></script>
+        <script src="assets/js/tagsinput.js"></script>
         <script>
  ClassicEditor
     .create( document.querySelector( '#body' ), {

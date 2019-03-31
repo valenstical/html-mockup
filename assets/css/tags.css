@@ -1,0 +1,9 @@
+.tag input {
+    border: none;
+}
+
+.tag input:focus {
+    box-shadow: none;
+    border: none;
+    outline: none;
+}

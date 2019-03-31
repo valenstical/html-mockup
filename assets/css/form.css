@@ -1,6 +1,6 @@
 .form .form-control {
     background-color: #F4F3F3;
-    border: none;
+    border-style: none;
 }
 
 .form textarea.form-control {
@@ -44,4 +44,13 @@
 
 .form textarea.textarea-sm {
     min-height: auto;
+}
+
+.form-borderless .form-control {
+    background-color: white;
+    border-style: solid;
+}
+
+.form .input-auto {
+    height: auto;
 }
