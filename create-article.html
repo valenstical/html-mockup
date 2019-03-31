@@ -58,7 +58,7 @@
                     </ul>
                     <ul class="navbar-nav mt-lg-0"> 
                         <li class="nav-item"> 
-                            <a class="nav-link btn-cta transition btn-brand" href="signup.html"><i class="fas fa-pen transition"></i>Write an article</a> 
+                            <a class="nav-link btn-cta transition btn-brand" href="create-article.html"><i class="fas fa-pen transition"></i>Write an article</a> 
                         </li>                         
                     </ul>                     
                 </div>
@@ -87,19 +87,38 @@
         <main class="main-body">
             <section class="wrapper min-vh-100">
                 <div class="container">
-                    <header class="page-header" data-pg-collapsed>
+                    <header class="page-header">
                         <h1>
     New Article</h1>
                     </header>
-                    <div class="card mb-5 mt-n5" data-pg-collapsed>
-                        <form role="form" data-pg-collapsed class="form p-sm-4 p-3"> 
+                    <div class="card mb-5 mt-n5">
+                        <form role="form" class="form p-sm-4 p-3"> 
                             <div class="form-group mb-4" data-pg-collapsed> 
                                 <label for="title" class="font-weight-bold">Title</label>                                 
                                 <input type="text" class="form-control text-capitalize" id="title" name="title" required> 
                             </div>
-                            <div class="form-group mb-4"> 
+                            <div class="form-group mb-4" data-pg-collapsed> 
                                 <label for="description" class="font-weight-bold">Short Description</label>                                 
-                                <textarea class="form-control" id="description" name="description"></textarea>                                 
+                                <textarea class="form-control textarea-sm" id="description" name="description"></textarea>                                 
+                            </div>
+                            <div class="form-group mb-4" data-pg-collapsed> 
+                                <label for="description" class="font-weight-bold">Details</label>                                 
+                                <textarea class="form-control" id="body" name="body"></textarea>                                 
+                            </div>
+                            <div class="form-group mb-4"> 
+                                <label class="font-weight-bold">Category</label>
+                                <select class="custom-select" name="category"> 
+                                    <option selected value="-1">-- Choose one --</option>                                     
+                                    <option value="3">Business</option>                                     
+                                    <option value="7">Entertainment</option>                                     
+                                    <option value="4">Fashion</option>                                     
+                                    <option value="6">Food</option>                                     
+                                    <option value="5">Health</option>                                     
+                                    <option value="8">History</option>                                     
+                                    <option value="1">Technology</option>
+                                    <option value="2">Sports</option>                                     
+                                    <option value="9">Others</option>                                     
+                                </select>                                                                  
                             </div>                             
                             <button type="submit" class="btn btn-brand btn-plain">Publish article</button>                             
                         </form>
@@ -122,6 +141,22 @@
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/popper.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/delete-this.js"></script>
+        <script src="https://cdn.ckeditor.com/ckeditor5/12.0.0/classic/ckeditor.js"></script>
+        <script>
+ ClassicEditor
+    .create( document.querySelector( '#body' ), {
+        toolbar: [ 'heading', '|', 'bold', 'italic', 'link', 'bulletedList', 'numberedList', 'underline', 'blockQuote', 'undo', 'redo' ],
+        heading: {
+            options: [
+                { model: 'paragraph', title: 'Paragraph', class: 'ck-heading_paragraph' },
+                { model: 'heading1', view: 'h1', title: 'Heading 1', class: 'ck-heading_heading1' },
+                { model: 'heading2', view: 'h2', title: 'Heading 2', class: 'ck-heading_heading2' }
+            ]
+        }
+    } )
+    .catch( error => {
+        console.log( error );
+    } );
+</script>
     </body>
 </html>
