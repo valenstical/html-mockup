@@ -28,24 +28,25 @@
 .search-input {
     color: #999595;
     font-size: 16px;
-    height: 40px;
-    margin-top: 7px;
+    height: 55px;
     width: 100%;
     padding-left: 60px;
     padding-right: 10px;
     border: none;
-    border-right: 1px solid #EAEAEA;
 }
 
 .search-select {
     border: none;
-    height: 55px;
+    height: 40px;
+    margin-top: 7px;
+    border-left: 1px solid #EAEAEA;
 }
 
 .search-button {
     right: 5px;
     border-radius: 50px;
-    width: 100px;
+    width: 100%;
+    max-width: 200px;
     top: 5px;
     height: 45px;
     padding-top: 10px;
