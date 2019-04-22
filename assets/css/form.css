@@ -1,6 +1,7 @@
 .form .form-control {
     background-color: #F4F3F3;
     border-style: none;
+    border-radius: 3px;
 }
 
 .form textarea.form-control {
@@ -53,4 +54,8 @@
 
 .form .input-auto {
     height: auto;
+}
+
+.btn-rectangle {
+    border-radius: 2px;
 }

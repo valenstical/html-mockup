@@ -12,19 +12,18 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" type="text/css">
         <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
         <link href="assets/css/shared.css" rel="stylesheet" type="text/css">
-        <link href="assets/css/home.css" rel="stylesheet" type="text/css">
-        <link href="assets/css/category.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/form.css" rel="stylesheet" type="text/css">
         <link href="assets/css/article.css" rel="stylesheet" type="text/css">
-        <link href="assets/css/author.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/404.css" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg fixed-top navbar-light" id="navbar"> 
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light" id="navbar" data-pg-collapsed> 
             <div class="container">
                 <a class="navbar-brand" href="index.html">Authors Haven</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler17" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation" data-pg-collapsed> 
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler17" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"> 
                     <span class="navbar-toggler-icon"></span> 
                 </button>
-                <div class="collapse navbar-collapse" id="navbarToggler17" data-pg-collapsed> 
+                <div class="collapse navbar-collapse" id="navbarToggler17"> 
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0"> 
                         <li class="nav-item dropdown"> 
                             <a class="nav-link dropdown-toggle" href="categories.html" id="navbarDropdownMenuLink18" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                                    Categories                               </a> 
@@ -59,15 +58,15 @@
                         </li>                         
                     </ul>
                     <ul class="navbar-nav mt-lg-0"> 
-                        <li class="nav-item" data-pg-collapsed> 
+                        <li class="nav-item"> 
                             <a class="nav-link btn-cta transition btn-brand" href="signup.html"><i class="fas fa-pen transition"></i>Write an article</a> 
                         </li>
-                        <li class="nav-item" data-pg-collapsed> 
+                        <li class="nav-item"> 
                             <a class="nav-link" href="login.html">Login</a> 
                         </li>                         
                     </ul>                     
                 </div>
-                <div class="dropdown nav-profile" data-pg-collapsed> 
+                <div class="dropdown nav-profile"> 
                     <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <img class="nav-profile" src="assets/images/authors/photo-1522720962427-d53e89da4071.jpg"/> 
                     </button>                     
@@ -90,115 +89,105 @@
             </div>             
         </nav>
         <main class="main-body">
-            <section class="wrapper">
-                <div class="container">
+            <section class="wrapper min-vh-100 not-found ">
+                <div class="not-found-intro">
+                    <div class="container">
+                        <header data-pg-collapsed>
+                            <p>😔</p>
+                            <h1>404 - PAGE NOT FOUND</h1>
+                            <p>It looks like you are trying to access a page that has been deleted or never existed.</p>
+                            <p>You can find more impactful acticles  on our <a href="/">home page.</a></p>
+                        </header>
+                        <form class="form" action="/search" method="get" data-pg-collapsed>
+                            <div class="input-group"> 
+                                <div class="input-group-prepend">
+                                    <i class="fas fa-search"></i> 
+                                </div>
+                                <input type="text" class="form-control" placeholder="Search Authors Haven" name="q" autocomplete="off">
+                                <div class="input-group-prepend"> 
+                                    <button class="btn" type="submit">
+                                        Search
+</button>                                     
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="container" data-pg-collapsed>
                     <header class="page-header">
-                        <h1>Categories</h1>
+                        <h2>Try these articles</h2>
                     </header>
-                    <div class="row">
-                        <div class="col-md-4 col-sm-6">
-                            <div class="category-item overlay category-item-technology" style="background-image: url('assets/images/categories/technology.jpg');">
-                                <a href="" class="link-surface"></a>
-                                <div class="relative">
-                                    <h4>Technology</h4>
-                                    <span>Explore Articles</span>
+                    <div class="row view-row">
+                        <div class="col-lg-4 col-sm-6" data-pg-collapsed>
+                            <div class="article">
+                                <a href="single-article.html" class="link-surface"></a>
+                                <div class="article-cover" data-pg-collapsed>
+                                    <img src="assets/images/articles/thought-catalog-470985-unsplash.jpg" class="article-cover-img"/>
+                                </div>
+                                <div class="article-item">
+                                    <span class="article-category">Health</span>
+                                    <h4>5 ways to manage your time effectively.</h4>
+                                    <p>Distinctively coordinate pandemic technologies rather than market-driven meta-services. Distinctively reconceptualize high standards in...</p>
+                                    <div class="article-author" data-pg-collapsed>
+                                        <img src="assets/images/authors/photo-1524154217857-45f012d0f167.jpg"/>
+                                        <div>
+                                            <h6>Alexandra</h6>
+                                            <span>22 hrs ago</span>
+                                            <span class="article-author-dot"></span>
+                                            <span>4 min read</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>                             
                         </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="category-item overlay category-item-sports" style="background-image: url('assets/images/categories/sports.jpg');">
-                                <a href="search.html?categoryId=2" class="link-surface"></a>
-                                <div class="relative">
-                                    <h4>Sports</h4>
-                                    <span>Explore Articles</span>
+                        <div class="col-lg-4 col-sm-6" data-pg-collapsed>
+                            <div class="article transition">
+                                <a href="single-article.html" class="link-surface"></a>
+                                <div class="article-cover">
+                                    <img src="assets/images/articles/brooke-lark-158017-unsplash.jpg" class="article-cover-img transition"/>
+                                </div>
+                                <div class="article-item" data-pg-collapsed>
+                                    <span class="article-category">Food</span>
+                                    <h4>5 ways to manage your time effectively.</h4>
+                                    <p>Distinctively coordinate pandemic technologies rather than market-driven meta-services. Distinctively reconceptualize high standards in...</p>
+                                    <div class="article-author">
+                                        <img src="assets/images/authors/photo-1524154217857-45f012d0f167.jpg"/>
+                                        <div>
+                                            <h6>Alexandra</h6>
+                                            <span>22 hrs ago</span>
+                                            <span class="article-author-dot"></span>
+                                            <span>4 min read</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>                             
                         </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="category-item overlay category-item-business" style="background-image: url('assets/images/categories/business.jpg');">
-                                <a href="search.html?categoryId=3" class="link-surface"></a>
-                                <div class="relative">
-                                    <h4>Business</h4>
-                                    <span>Explore Articles</span>
+                        <div class="col-lg-4 col-sm-6" data-pg-collapsed>
+                            <div class="article transition">
+                                <a href="single-article.html" class="link-surface"></a>
+                                <div class="article-cover">
+                                    <img src="assets/images/articles/avel-chuklanov-509630-unsplash.jpg" class="article-cover-img transition"/>
                                 </div>
-                            </div>                             
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="category-item overlay category-item-fashion" style="background-image: url('assets/images/categories/fashion.jpg');">
-                                <a href="search.html?categoryId=4" class="link-surface"></a>
-                                <div class="relative">
-                                    <h4>Fashion</h4>
-                                    <span>Explore Articles</span>
-                                </div>
-                            </div>                             
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="category-item overlay category-item-health" style="background-image: url('assets/images/categories/health.jpg');">
-                                <a href="search.html?categoryId=5" class="link-surface"></a>
-                                <div class="relative">
-                                    <h4>Health</h4>
-                                    <span>Explore Articles</span>
-                                </div>
-                            </div>                             
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="category-item overlay category-item-fashion" style="background-image: url('assets/images/categories/food.jpg');">
-                                <a href="search.html?categoryId=6" class="link-surface"></a>
-                                <div class="relative">
-                                    <h4>Food</h4>
-                                    <span>Explore Articles</span>
-                                </div>
-                            </div>                             
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="category-item overlay category-item-fashion" style="background-image: url('assets/images/categories/entertainment.jpg');">
-                                <a href="search.html?categoryId=7" class="link-surface"></a>
-                                <div class="relative">
-                                    <h4>Entertainment</h4>
-                                    <span>Explore Articles</span>
-                                </div>
-                            </div>                             
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="category-item overlay category-item-fashion" style="background-image: url('assets/images/categories/history.jpg');">
-                                <a href="search.html?categoryId=8" class="link-surface"></a>
-                                <div class="relative">
-                                    <h4>History</h4>
-                                    <span>Explore Articles</span>
-                                </div>
-                            </div>                             
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="category-item overlay category-item-fashion" style="background-image: url('assets/images/categories/others.jpg');">
-                                <a href="search.html?categoryId=9" class="link-surface"></a>
-                                <div class="relative">
-                                    <h4>Others</h4>
-                                    <span>Explore Articles</span>
+                                <div class="article-item">
+                                    <span class="article-category">Entertainment</span>
+                                    <h4>5 ways to manage your time effectively.</h4>
+                                    <p>Distinctively coordinate pandemic technologies rather than market-driven meta-services. Distinctively reconceptualize high standards in...</p>
+                                    <div class="article-author">
+                                        <img src="assets/images/authors/photo-1524154217857-45f012d0f167.jpg"/>
+                                        <div>
+                                            <h6>Alexandra</h6>
+                                            <span>22 hrs ago</span>
+                                            <span class="article-author-dot"></span>
+                                            <span>4 min read</span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>                             
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="cta">
-                <div class="container">
-                    <div class="row">
-                        <div class="order-md-5 col-md-5">
-                            <div class="text-center">
-                                <img src="assets/images/backgrounds/Image.png"/>
-                            </div>                             
-                        </div>
-                        <div class="col-md-7">
-                            <div class="cta-inner">
-                                <h2>Bring your creative writing skills to life</h2>
-                                <p>With tools to make every part of your process more human and a support team excited to help you, getting started with inbound has never been easier.</p>
-                                <a href="signup.html" class="btn-brand">Start Writing</a>
-                            </div>                             
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <footer class="footer">
+            <footer class="footer" data-pg-collapsed>
                 <div class="container">
                     <div>
                         <a href="index.html" class="logo">Authors Haven</a>

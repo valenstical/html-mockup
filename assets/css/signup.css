@@ -1,0 +1,95 @@
+.signup-row {
+    background-color: white;
+}
+
+.signup-bg {
+    background-image: url('../images/backgrounds/brad-neathery-258926-unsplash.jpg');
+    background-size: cover;
+    background-position: center center;
+    right: 15px;
+}
+
+.signup-intro {
+    position: absolute;
+    color: white;
+    bottom: 60px;
+    max-width: 380px;
+    left: 80px;
+}
+
+.signup-form {
+}
+
+.signup-form-message {
+    color: #999595;
+    font-size: 16px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+
+.signup-form-message a {
+    color: rgba(102, 0, 140, 0.8);
+    border-bottom: 1px dashed;
+    margin-right: 5px;
+    padding-bottom: 3px;
+}
+
+.signup-btn-back {
+    font-size: 22px;
+    color: #999595;
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 5px 10px;
+}
+
+.signup-form h1 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.signup-intro::before {
+    position: absolute;
+    content: "";
+    background-color: white;
+    height: 3px;
+    width: 40px;
+    left: -50px;
+    top: 15px;
+}
+
+.signup-btn-back:hover {
+    color: rgba(102, 0, 140, 0.7);
+}
+
+.signup-form-message a:hover {
+    text-decoration: none;
+    color: #66008c;
+}
+
+.social-grp {
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: -20px;
+    color: #423838;
+}
+
+.social-grp p {
+    color: #999595;
+}
+
+.social-grp p a {
+    color: #403e3e;
+    text-decoration: underline;
+    display: inline-block;
+}
+
+.signup form button {
+}
+
+.signup form button {
+}
+
+.signup-intro h2 {
+    font-size: 28px;
+    font-weight: bold;
+}

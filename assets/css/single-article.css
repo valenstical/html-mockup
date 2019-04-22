@@ -1,0 +1,337 @@
+
+
+.page-link
+{
+    color: #464444;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.page-item.active .page-link,
+.page-link.active
+{
+    background-color: #66008C;
+    color: white;
+    border-color: #dee2e6;
+}
+
+.page-item.active
+{
+    background-color: #f0f0f0;
+}
+
+.page-link:hover
+{
+    color: #66008C;
+}
+
+.single-hero
+{
+    height: 230px;
+    background-image: url('../images/backgrounds/hipster-mum-236831-unsplash.jpg');
+    background-position: center center;
+    background-size: cover;
+    margin-bottom: 40px;
+}
+
+.signle-title
+{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 1.1em;
+}
+
+.single-body
+{
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.single-body p
+{
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+.single-container
+{
+    max-width: 992px;
+    margin: 60px auto 50px;
+}
+
+.single-author-container .article-author
+{
+    border: none;
+}
+
+.single-author-container div div
+{
+    margin-left: 60px;
+    margin-top: 10px;
+}
+
+.single-author-container img
+{
+    width: 50px;
+    height: 50px;
+}
+
+.single-sub
+{
+}
+
+.single-tags
+{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.single-tags .badge
+{
+    border-radius: 23px;
+    font-size: 15px;
+    display: inline-block;
+    padding: 15px;
+    background-color: #EAF2FF;
+    margin-right: 5px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.clap-grp
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    border-top: 1px solid #C4C4C4;
+    border-bottom: 1px solid #C4C4C4;
+    margin-top: 50px;
+}
+
+.clap-icon
+{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.clap-icon img
+{
+    margin-right: 5px;
+    width: 38px;
+}
+
+.share-grp
+{
+    float: right;
+    position: relative;
+}
+
+.share-grp a
+{
+    display: inline-block;
+    padding: 0px 5px 1px 6px;
+    font-size: 18px;
+    position: relative;
+    top: 7px;
+}
+
+.single-article-author p
+{
+    max-width: 500px;
+}
+
+.single-article-author button
+{
+    color: #66008C;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.2);
+    border-radius: 50px;
+    padding: 5px 20px;
+}
+
+.following .single-article-author button,
+.single-article-author .following
+{
+    background-color: #66008C;
+    color: white;
+}
+
+.single-article-author
+{
+    margin-bottom: 20px;
+    margin-top: -20px;
+    padding-right: 20px;
+    border-bottom: 1px solid #C4C4C4;
+    padding-bottom: 30px;
+}
+
+.comment-grp
+{
+    margin-top: 0px;
+    padding-top: 5px;
+}
+
+.comment-grp .article-author:first-child
+{
+    border: none;
+}
+
+.comment-grp .article-author p
+{
+    max-width: 700px;
+    margin-bottom: 10px;
+}
+
+.comment-grp h4
+{
+    margin-bottom: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.comment-grp form
+{
+    margin: 20px 20px 0px;
+}
+
+.comment-grp form .form-control
+{
+    vertical-align: middle;
+    height: 65px;
+    padding-left: 20px;
+    padding-right: 60px;
+}
+
+.comment-grp .form-group
+{
+    position: relative;
+}
+
+.comment-grp form button
+{
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background-color: transparent;
+    color: #474343;
+    bottom: 0px;
+    width: 60px;
+}
+
+.loadmore-grp
+{
+    background-color: #bdbdbd;
+    color: #1a1919;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 0px;
+    display: block;
+    width: 100%;
+}
+
+.single-suggested-grp
+{
+    background-color: #EAEAEA;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.single-suggested-grp h4
+{
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+@media (min-width:450px)
+{
+    .single-hero
+    {
+        height: 400px;
+    }
+}
+
+.comment-grp .card-body
+{
+    padding: 10px 0px 0px;
+}
+
+.comment-grp .article-author img
+{
+    margin-left: 20px;
+}
+
+.comment-grp .article-author div
+{
+    margin-right: 20px;
+    padding-left: 25px;
+}
+
+@keyframes shiny{
+ from {
+     background-color: red;
+    }
+    to:{
+     background-color: green;   
+    }
+}
+
+.comment-loader
+{
+    height: 80px;
+    position: relative;
+}
+
+.comment-loader-img
+{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #efefef;
+    left: 20px;
+    top: 10px;
+}
+
+.comment-loader-name
+{
+    margin-left: 70px;
+    width: 130px;
+    height: 7px;
+    background-color: #efefef;
+    top: 17px;
+    position: absolute;
+}
+
+.comment-loader-time
+{
+    top: 29px;
+    width: 60px;
+    height: 4px;
+}
+
+.comment-loader-text
+{
+    top: 46px;
+    height: 7px;
+    width: 70%;
+}
+
+.comment-loader-text-sm
+{
+    width: 50%;
+    top: 59px;
+}
+
+.comment-loader div
+{
+    animation: shiny 2s linear 0s infinite reverse;
+}
+
+

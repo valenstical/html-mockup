@@ -1,0 +1,77 @@
+.not-found header h1 {
+    font-size: 30px;
+}
+
+.not-found header p {
+    font-size: 16px;
+}
+
+.not-found .form {
+    max-width: 400px;
+    background: white;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.not-found .form input {
+    background: inherit;
+    height: 40px;
+}
+
+.not-found .form .fas {
+    width: 40px;
+    padding-top: 4px;
+    text-align: center;
+    border-right: 1px solid rgba(0,0,0,0.1);
+    height: 25px;
+    margin-top: 7px;
+}
+
+.not-found .form button {
+    background-color: #66008c;
+    color: white;
+}
+
+.not-found .form input:focus {
+    box-shadow: none;
+}
+
+.not-found-intro {
+    margin-top: -40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #efefef;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.not-found p a {
+    padding-bottom: 0px;
+    display: inline-block;
+    border-bottom: 1px dashed #66008c;
+    margin-left: 5px;
+    color: #66008c;
+    font-weight: bold;
+}
+
+.not-found header h2 {
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.not-found p a:hover {
+    text-decoration: none;
+}
+
+@media (min-width:500px) {
+    .not-found-intro {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        margin-bottom: 8;
+    }
+}
